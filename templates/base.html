@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django TODO App</title>
+    <style>
+        body { font-family: sans-serif; margin: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .todo-item { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .resolved { text-decoration: line-through; color: #888; }
+        .actions a, .actions button { margin-left: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Django TODO App</h1>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
